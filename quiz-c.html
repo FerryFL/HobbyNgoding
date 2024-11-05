@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/Ellipse 4.png" type="image/x-icon">
+    <title>Quiz C</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Labrada:wght@500&family=Montserrat:wght@100;300;400;700&display=swap"
+        rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo"><img src="assets/Ellipse 2.png" alt="profile"></a>
+
+        <div class="navbar-nav">
+            <a href="home.html">Home</a>
+        </div>
+
+        <div class="hamburger-btn">
+            <span>&#9776</span>
+        </div>
+    </nav>
+
+    <!-- Container -->
+
+    <h1 class="TitleQuiz">Quiz Bahasa C</h1>
+    <div>
+        <a href="materi-c.html" class="LinkBack">Kembali</a>
+    </div>
+
+    <div class="Quiz-Card">
+        <div class="Container-Quiz-Card">
+            <div class="Text-Quiz">
+                <form onsubmit="return validasi_nilai()">
+                    <h3>1. Tahun ditemukannya Bahasa C</h3>
+                    <div class="input_card">
+                        <input type="radio" name="tahun" value="1954"> 1954
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="tahun" value="1969" id="1">
+                        1969
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="tahun" value="1960">
+                        1960
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="tahun" value="1959"> 1959
+                    </div>
+                    <br>
+                    <h3>2. Bahasa C dikembangkan oleh</h3>
+                    <div class="input_card">
+                        <input type="radio" name="bahasa" value="Dennis Ritchie" id="2"> Dennis Ritchie
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="bahasa" value="Linus Torvalds"> Linus Torvalds
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="bahasa" value="Bjarne Stroustrup"> Bjarne Stroustrup
+                    </div>
+                    <br>
+
+                    <h3>3. Fungsi yang tidak mengembalikan nilai</h3>
+                    <div class="input_card">
+                        <input type="radio" name="fungsi" value="int"> int
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="fungsi" value="bool"> bool
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="fungsi" value="void" id="3"> void
+                    </div>
+                    <br>
+
+                    <h3>4. Format untuk menambahkan library pada C</h3>
+                    <div class="input_card">
+                        <input type="radio" name="library" value="#input<stdio.h>"> #input&lt;stdio.h&gt;
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="library" value="#include<stdio.h>" id="4"> #include&lt;stdio.h&gt;
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="library" value="#add<stdio.h>"> #add&lt;stdio.h&gt;
+                    </div>
+                    <br>
+
+                    <h3>5. Format yang jika tidak ada, maka akan membuat error pada code</h3>
+                    <div class="input_card">
+                        <input type="radio" name="format" value="int main()" id="5"> int main()
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="format" value="int flag;"> int flag;
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="format" value="char name[255];"> char name[255];
+                    </div>
+                    <br>
+                    <button type="Submit" class="submitbut" id="submitBtn">Kumpul</button>
+                    <span id="nilai"></span>
+                    <div class="afterBtn">
+                        <button type="button" id="restartBtn" style="display: none;"
+                            onclick="location.reload();">Ulang</button>
+                        <button type="button" id="backBtn" style="display: none;" onclick="redirect_c()">Kembali</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="score.js"></script>
+</body>
+
+</html>

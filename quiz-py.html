@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/Ellipse 4.png" type="image/x-icon">
+    <title>Quiz Python</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Labrada:wght@500&family=Montserrat:wght@100;300;400;700&display=swap"
+        rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo"><img src="assets/Ellipse 2.png" alt="profile"></a>
+
+        <div class="navbar-nav">
+            <a href="home.html">Home</a>
+        </div>
+
+        <div class="hamburger-btn">
+            <span>&#9776</span>
+        </div>
+    </nav>
+
+    <!-- Container -->
+    <h1 class="TitleQuiz">Quiz Phyton</h1>
+    <div>
+        <a href="materi-py.html" class="LinkBack">Kembali</a>
+    </div>
+
+    <div class="Quiz-Card">
+        <div class="Container-Quiz-Card">
+            <div class="Text-Quiz">
+                <form onsubmit="return validasi_nilai()">
+                    <h3>1. Tahun berapa Python mulai dikembangkan supaya menjadi lebih akseptabel?</h3>
+                    <div class="input_card">
+                        <input type="radio" name="tahun" value="1995" id="1"> 1995
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="tahun" value="1990"> 1990
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="tahun" value="1998"> 1998
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="tahun" value="2000"> 2000
+                    </div>
+                    <br>
+
+                    <h3>2. Bahasa Python dikembangkan oleh</h3>
+                    <div class="input_card">
+                        <input type="radio" name="bahasa" value="Guido Van Rossum" id="2"> Guido Van Rossum
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="bahasa" value="Albert Willenstein"> Albert Willens
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="bahasa" value="Liam Alberstone"> Liam Alberstone
+                    </div>
+                    <br>
+
+                    <h3>3. Type numeric yang dapat digunakan dalam Python</h3>
+                    <div class="input_card">
+                        <input type="radio" name="format" value="int">Int
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="format" value="float">Float
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="format" value="semuanya_benar" id="3">Semuanya benar
+                    </div>
+                    <br>
+
+                    <h3>4. Kemudahan Python yang berbeda dengan C adalah</h3>
+                    <div class="input_card">
+                        <input type="radio" name="kemudahan" value="Melakukan print menggunakan printf">Melakukan print
+                        menggunakan printf
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="kemudahan" id="4" value="Dapat mengisi string pada variabel tertentu tanpa menggunakan char array"><p class="long_4_text">Dapat mengisi string pada variabel tertentu tanpa menggunakan char array</p> 
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="kemudahan" value="Memasukkan library dengan #addLibrary"> Memasukkan
+                        library dengan #addLibrary
+                    </div>
+                    <br>
+
+                    <h3>5. freecodecamp="FREECODECAMP" print(f"{(..........)}") code di atas tidak lengkap, lengkapilah
+                        menggunakan pilihan yang benar</h3>
+                    <div class="input_card">
+                        <input type="radio" name="freecodecamp" value="freecodecamp" id="5">freecodecamp
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="freecodecamp" value="FREECODECAMP">FREECODECAMP
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="freecodecamp" value="<var_freecodecamp>"> &lt;var_freecodecamp&gt;
+                    </div>
+                    <br>
+
+                    <button type="Submit" class="submitbut" id="submitBtn">Kumpul</button>
+                    <span id="nilai"></span>
+                    <div class="afterBtn">
+                        <button type="button" id="restartBtn" style="display: none;"
+                            onclick="location.reload();">Ulang</button>
+                        <button type="button" id="backBtn" style="display: none;"
+                            onclick="redirect_py()">Kembali</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="score.js"></script>
+</body>
+
+</html>

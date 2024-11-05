@@ -1,0 +1,690 @@
+:root {
+    --warna1: #1D3354;
+    --warna2: #E9F1F7;
+    --warna3: #467599;
+    --warna4: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Labrada", serif;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--warna2);
+    color: var(--warna1);
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: var(--warna1);
+    padding: 1rem 2%;
+    position: fixed;
+    border-bottom: 1px solid #bababa;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 4rem;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav a {
+    display: inline-block;
+    color: var(--warna2);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0 1rem;
+}
+
+.navbar-nav a:hover {
+    color: var(--warna4);
+}
+
+.navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.1rem;
+    border-bottom: 0.1rem solid var(--warna4);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar-nav a:hover::after {
+    transform: scaleX(0.8);
+}
+
+.hamburger-btn {
+    display: none;
+}
+
+/* Home */
+
+#home {
+    margin-top: 8rem;
+    position: relative;
+}
+
+.home {
+    margin-top: 8rem;
+}
+
+.maskot {
+    position: fixed;
+    right: 0%;
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.maskot p {
+    background-color: #fff;
+    margin-right: 1.5rem;
+    padding: 0.5rem 2.7rem;
+    text-align: center;
+}
+
+.home_top {
+    margin: 0 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.home_text h2 {
+    text-align: left;
+    padding-top: 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.home_text .button_absen {
+    margin-top: 1.5rem;
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.3rem;
+    background-color: var(--warna3);
+    color: var(--warna2);
+}
+
+.button_login {
+    margin-top: 1.5rem;
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.3rem;
+    background-color: var(--warna3);
+    color: var(--warna2);
+}
+
+.home_img img {
+    width: 20rem;
+}
+
+.link {
+    margin: 3rem 0 2rem 4rem;
+}
+
+/* Category */
+
+#category {
+    height: 100vh;
+    background-color: var(--warna3);
+    color: var(--warna2);
+    padding: 4rem;
+}
+
+#category h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#category h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5rem;
+}
+
+.category_card {
+    display: flex;
+    justify-content: space-around;
+}
+
+.webProg:hover,
+.appProg:hover {
+    box-shadow: 0 0 20px #000;
+    transition: 0.2s ease-in-out;
+}
+
+.webProg {
+    padding: 2rem;
+    width: 30%;
+    background-color: var(--warna2);
+    border-radius: 1rem;
+}
+
+.webProg h3 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.appProg {
+    padding: 2rem;
+    width: 30%;
+    background-color: var(--warna2);
+    border-radius: 1rem;
+}
+
+.appProg h3 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.webProg a,
+.appProg a {
+    color: var(--warna1);
+}
+
+/* Review */
+
+#review {
+    margin: 4rem;
+    color: var(--warna4);
+}
+
+#review h1 {
+    margin-bottom: 2rem;
+}
+
+#review h2 {
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.review_card {
+    background-color: var(--warna3);
+    color: var(--warna2);
+    width: 25%;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.review_cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--warna3);
+    color: var(--warna2);
+    padding: 0 6rem;
+}
+
+footer,
+.footerKiri {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerKiri img {
+    margin: 1rem 0;
+    width: 8rem;
+}
+
+.footerKiriText p {
+    margin: 1rem 1.5rem 1rem 1rem;
+}
+
+.footerText2 {
+    font-size: 0.8rem;
+}
+
+.footerKanan {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footerKanan img {
+    width: 2rem;
+}
+
+.footerKanan .sosmed {
+    padding-top: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+/* Profile */
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12rem 10rem 0 0;
+    gap: 5rem;
+}
+
+.profile img {
+    width: 18rem;
+}
+
+.data_card {
+    margin-bottom: 1rem;
+}
+
+.data_card h1 {
+    color: var(--warna4);
+    font-size: 1.1rem;
+}
+
+.data_card p {
+    padding: 0.3rem 15rem 0.3rem 0.5rem;
+    font-size: 0.7rem;
+    border-radius: 0.2rem;
+    color: var(--warna2);
+    background-color: var(--warna3);
+}
+
+.button_logout {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.3rem;
+    background-color: var(--warna3);
+    color: var(--warna2);
+}
+
+/* Login */
+
+.loginForm {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    background-color: var(--warna3);
+}
+
+.loginTitle {
+    color: var(--warna2);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+input {
+    height: 30px;
+    width: 60%;
+    padding: 0 10px;
+    margin-top: 2rem;
+    border-radius: 0.2rem;
+    border: none;
+}
+
+.login p {
+    margin-top: 2rem;
+    color: var(--warna2);
+}
+
+.login button {
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.3rem;
+    background-color: var(--warna2);
+    color: var(--warna3);
+    border: none;
+}
+
+.login a {
+    color: var(--warna4);
+}
+
+#register:hover,
+#login:hover {
+    border-bottom: 0.1rem solid var(--warna4);
+}
+
+/* Register */
+
+.register {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    background-color: var(--warna3);
+}
+
+.register input {
+    height: 30px;
+    width: 60%;
+    padding: 0 10px;
+    margin-top: 1rem;
+    border-radius: 0.2rem;
+    border: none;
+}
+
+.register p {
+    margin-top: 1rem;
+    color: var(--warna2);
+}
+
+.register a {
+    color: var(--warna4);
+}
+
+.register button {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    border-radius: 0.3rem;
+    background-color: var(--warna2);
+    color: var(--warna3);
+    border: none;
+}
+
+/* Absen */
+
+#absen {
+    margin-top: 11rem;
+    height: 100vh;
+}
+
+#absen h1 {
+    text-align: center;
+    margin-bottom: 2.8rem;
+}
+
+.tanggal_atas,
+.tanggal_tengah,
+.tanggal_bawah {
+    display: flex;
+    justify-content: center;
+    color: var(--warna2);
+}
+
+.tanggal,
+.tanggal_marked {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.8rem;
+    height: 2.8rem;
+    background-color: var(--warna3);
+    margin: 1rem;
+}
+
+.claim_button {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--warna3);
+    border: none;
+    margin-top: 3rem;
+    padding: 0.8rem 3rem;
+    font-size: 1.3rem;
+    border-radius: 0.4rem;
+    color: var(--warna2);
+    cursor: pointer;
+}
+
+/* Consultation */
+
+.consultation {
+    display: flex;
+    justify-content: center;
+    margin-top: 11rem;
+}
+
+.consulTitle {
+    text-align: center;
+    color: var(--warna2);
+    font-weight: 500;
+}
+
+.question_box {
+    margin-top: 1.5rem;
+    width: 15.75rem;
+    height: 6rem;
+}
+
+textarea {
+    font-family: "Labrada", serif;
+    font-family: "Montserrat", sans-serif;
+    padding: 0.5rem 0 0 0.5rem;
+}
+
+.consultation button a {
+    color: var(--warna3);
+}
+
+/* Web Programming */
+
+.category_title {
+    padding: 1rem 0 3rem 0;
+    text-align: center;
+}
+
+.language {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.language_card a {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.language_card {
+    background-color: var(--warna3);
+    width: 20rem;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.language_card:hover {
+    border-radius: 1rem;
+    box-shadow: 0 0 8px #000;
+    transition: 0.2s ease-in-out;
+}
+
+.language_card img {
+    width: 4rem;
+}
+
+.language_card h2 {
+    color: var(--warna2);
+    text-align: center;
+    margin-left: 4.5rem;
+}
+
+/* Quiz C */
+
+.TitleQuiz {
+    text-align: center;
+    margin: 10rem 10rem;
+}
+
+.LinkBack {
+    position: absolute;
+    display: flex;
+    margin: -13rem 15rem;
+    font-size: 25px;
+}
+
+.Quiz-Card {
+    margin-top: -5rem;
+    background-color: var(--warna3);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    padding: 7rem 8rem;
+    width: 40%;
+    height: auto;
+}
+
+.LogoQuizPy {
+    margin-top: -5rem;
+    margin-left: 45%;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: var(--warna2);
+}
+
+.LogoQuiz {
+    margin-top: -5rem;
+    margin-left: 45%;
+    width: 5rem;
+    /* background-color: var(--warna2); */
+}
+
+.Text-Quiz {
+    font-size: 17px;
+    color: var(--warna2);
+}
+
+.Text-Quiz a {
+    color: var(--warna2);
+    text-decoration: underline;
+}
+
+.Text-Quiz h3 {
+    font-weight: normal;
+}
+
+.thumbnail a{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--warna2);
+}
+
+.thumbnail img{
+    margin-bottom: 1.5rem;
+}
+
+.thumbnail h4{
+    font-size: 1.4rem;
+}
+
+.LinkMateri {
+    display: flex;
+    margin-top: 3rem;
+    color: var(--warna2);
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+}
+
+.buttonQuiz {
+    display: flex;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    color: var(--warna2);
+    background-color: var(--warna1);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    cursor: pointer;
+}
+
+.buttonQuiz:hover{
+    box-shadow: 0 0 8px #000;
+    transition: 0.2s ease-in-out;
+}
+
+.Text-Quiz input {
+    margin: 1rem 0 1rem 1.3rem;
+    height: 18px;
+    width: 2rem;
+}
+
+.input_card{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+}
+
+form .submitbut {
+    margin: 0 auto;
+    padding: 1rem;
+    border: none;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+    background-color: var(--warna1);
+    color: var(--warna2);
+    cursor: pointer;
+}
+
+.submitbut:hover{
+    box-shadow: 0 0 8px #000;
+    transition: 0.2s ease-in-out;
+}
+
+.spans{
+    color: rgb(148, 2, 2);
+}
+
+button{
+    cursor: pointer;
+}
+#nilai{
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    margin-top: 1rem;
+}
+.afterBtn{
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+.afterBtn button{
+    background-color: var(--warna1);
+    width: 8rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--warna2);
+}

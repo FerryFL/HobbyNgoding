@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/Ellipse 4.png" type="image/x-icon">
+    <title>Quiz HTML</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Labrada:wght@500&family=Montserrat:wght@100;300;400;700&display=swap"
+        rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo"><img src="assets/Ellipse 2.png" alt="profile"></a>
+
+        <div class="navbar-nav">
+            <a href="home.html">Home</a>
+        </div>
+
+        <div class="hamburger-btn">
+            <span>&#9776</span>
+        </div>
+    </nav>
+
+    <!-- Container -->
+    <h1 class="TitleQuiz">Quiz HTML</h1>
+    <div>
+        <a href="materi-html.html" class="LinkBack">Kembali</a>
+    </div>
+
+    <div class="Quiz-Card">
+        <div class="Container-Quiz-Card">
+            <div class="Text-Quiz">
+                <form onsubmit="return validasi_nilai()">
+                    <h3>1. Tahun dikembangkannya HTML</h3>
+                    <div class="input_card">
+                        <input type="radio" name="tahun" value="1991" id="1"> 1991
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="tahun" value="1989"> 1989
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="tahun" value="1970"> 1970
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="tahun" value="2003"> 2003
+                    </div>
+                    <br>
+
+                    <h3>2. Bahasa HTML dikembangkan oleh</h3>
+                    <div class="input_card">
+                        <input type="radio" name="bahasa" value="Dennis Ritchie"> Dennis Ritchie
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="bahasa" value="Tim Berners-Lee" id="2"> Tim Berners-Lee
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="bahasa" value="Bjarne Stroustrup"> Bjarne Stroustrup
+                    </div>
+                    <br>
+
+                    <h3>3. Fungsi untuk menambahkan enter</h3>
+                    <div class="input_card">
+                        <input type="radio" name="enter" value="<br>" id="3"> &lt;br&gt;
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="enter" value="<p>"> &lt;p&gt;
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="enter" value="<a>"> &lt;a&gt;
+                    </div>
+                    <br>
+
+                    <h3>4. Fungsi untuk meletakkan Image</h3>
+                    <div class="input_card">
+                        <input type="radio" name="image" value="<script>"> &lt;script&gt;
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="image" value="<body>"> &lt;body&gt;
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="image" value="<img>" id="4"> &lt;img&gt;
+                    </div>
+                    <br>
+
+                    <h3>5. Format untuk membuat teks placeholder pada HTML adalah</h3>
+                    <div class="input_card">
+                        <input type="radio" name="placeholder" value="<p>loren<p>"> &lt;p&gt;loren&lt;p&gt;
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="placeholder" value="<p>loner<p>"> &lt;p&gt;loner&lt;p&gt;
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="placeholder" value="<p>lores<p>"> &lt;p&gt;lores&lt;p&gt;
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="placeholder" value="<p>lorem<p>" id="5"> &lt;p&gt;lorem&lt;p&gt;
+                    </div>
+                    <br>
+
+                    <button type="Submit" class="submitbut" id="submitBtn">Kumpul</button>
+                    <span id="nilai"></span>
+                    <div class="afterBtn">
+                        <button type="button" id="restartBtn" style="display: none;"
+                            onclick="location.reload();">Ulang</button>
+                        <button type="button" id="backBtn" style="display: none;"
+                            onclick="redirect_html()">Kembali</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="score.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/Ellipse 4.png" type="image/x-icon">
+    <title>Materi HTML</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Labrada:wght@500&family=Montserrat:wght@100;300;400;700&display=swap"
+        rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo"><img src="assets/Ellipse 2.png" alt="profile"></a>
+
+        <div class="navbar-nav">
+            <a href="home.html">Home</a>
+        </div>
+
+        <div class="hamburger-btn">
+            <span>&#9776</span>
+        </div>
+    </nav>
+
+    <!-- Container -->
+    <h1 class="TitleQuiz">Tutorial HTML</h1>
+    <div>
+        <a href="webProgramming.html" class="LinkBack">Kembali</a>
+    </div>
+
+    <div class="Quiz-Card">
+        <div class="Container-Quiz-Card">
+            <img src="assets/html.png" alt="" class="LogoQuiz">
+
+            <div class="Text-Quiz">
+                <br>
+                <br>
+                <h1>Tag dalam HTML:</h1>
+                <p>Tag adalah code pada HTML, dan tag terbagi menjadi 2, tag yang berpasangan dan tag yang tidak
+                    berpasangan:</p>
+                <p>Contoh dasar tag yang ada pada HTML:</p>
+                <pre>
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+	</pre>
+                <p>Di atas adalah template awal tag pada HTML, dan kita akan membahasnya satu persatu.</p>
+                <h2>Tag yang dapat berada di dalam head adalah:</h2>
+                <ul>
+                    <li>Judul Halaman: &lt;title&gt;&lt;/title&gt;</li>
+                    <li>CSS: &lt;style&gt;&lt;/style&gt;</li>
+                    <li>Javascript: &lt;script&gt;&lt;/script&gt;</li>
+                    <li>Metadata: &lt;meta&gt;</li>
+                </ul>
+                <h2>Tag yang dapat berada di dalam body adalah:</h2>
+                <ul>
+                    <li>Teks (h1, h2, h3, h4, h5, h6): Digunakan untuk menyimpan heading dengan tiap level, dengan level
+                        1 yang paling besar dan level 6 yang paling kecil</li>
+                    <li>Pendukung teks (br, hr, ...): Format &lt;br&gt; digunakan untuk menambahkan garis baru, dan
+                        format &lt;hr&gt; digunakan untuk menambahkan garis horizontal</li>
+                    <li>Gambar (img): Digunakan untuk menyimpan gambar</li>
+                    <li>Hyperlink (a): Digunakan untuk menyimpan hyperlink</li>
+                    <li>List (ul, ol, ...): &lt;ul&gt; digunakan untuk unorder list (biasanya berisi panah, titik,
+                        strip), &lt;ol&gt; digunakan untuk ordered list (biasanya berisi angka, abjad)</li>
+                    <li>Tabel (table, thead, tbody)</li>
+                    <li>Form (form, input, select, button)</li>
+                    <li>Script (script)</li>
+                    <li>Object (object)</li>
+                    <li>Grouping (div, span)</li>
+                </ul>
+                <p>Kita juga dapat menambahkan komentar tanpa membuat code kita mengalami error dengan menggunakan
+                    format <code>&lt;!-- komentar --&gt;</code>.</p>
+                <h2>Struktur Tag:</h2>
+                <p>Kita dapat menyusun sebuah tag dengan struktur demikian: <code>namaTag atribut="nilai"</code>.
+                    Contohnya: <code>&lt;body bgcolor="blue"&gt;</code></p>
+                <p>Tag bisa saja memiliki banyak atribut. Contohnya:
+                    <code>&lt;body bgcolor="blue" id="myid" class="myclass"&gt;</code>
+                </p>
+                <p>Berikut merupakan atribut Global yang ada pada HTML:</p>
+                <ul>
+                    <li>accesskey: Untuk menentukan bagaimana elemen ini dapat diakses menggunakan keyboard</li>
+                    <li>class</li>
+                    <li>id: Digunakan untuk mengelompokkan sebuah tag menjadi id atau class tertentu</li>
+                    <li>dir: Digunakan untuk menentukan arah tulisan atau direction</li>
+                    <li>lang: Tag untuk bahasa (language)</li>
+                    <li>style: Digunakan untuk menyisipkan inline CSS</li>
+                    <li>tabindex: Digunakan untuk menentukan urutan untuk membuat form</li>
+                    <li>title: Digunakan untuk memberikan judul pada elemen tertentu</li>
+                </ul>
+                <h2>Heading dalam HTML:</h2>
+                <p>Berikut adalah format untuk heading dalam HTML:</p>
+                <pre>
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;HTML Heading&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+	&lt;h1&gt;Judul Artikel&lt;/h1&gt;
+	&lt;p&gt;Heading terbesar sebagai dasar website&lt;/p&gt;
+	
+	&lt;h2&gt;Sub Judul&lt;/h2&gt;
+	&lt;p&gt;Untuk menambahkan sub judul&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+	</pre>
+                <h2>List dalam HTML:</h2>
+                <pre>
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;HTML Heading&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+	&lt;h3&gt;To do List&lt;/h3&gt;
+	&lt;ol&gt;
+		&lt;li&gt;Bangun Pagi&lt;/li&gt;
+		&lt;li&gt;Sarapan&lt;/li&gt;
+		&lt;li&gt;Tidur Lagi&lt;/li&gt;
+	&lt;/ol&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+	</pre>
+                <h2>Penggunaan Hyperlink:</h2>
+                <pre>
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;HTML Heading&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+	&lt;p&gt;Klik &lt;a href="https://www.google.com/"&gt;disini&lt;/a&gt; untuk mengetahui lebih lanjut&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+	</pre>
+                <h2>Cara Menyimpan Gambar pada HTML:</h2>
+                <pre>
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;HTML Heading&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+	&lt;img src="logo.png"&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+	</pre>
+            </div>
+            <div class="thumbnail">
+                <a href="https://www.youtube.com/playlist?list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F" target="_blank"><img src="assets/ThumbHTML.jpg" alt="">
+                    <h4>HTML Dasar</h4>
+                </a>
+            </div>
+            <div>
+                <a href="quiz-html.html">
+                    <button class="buttonQuiz">
+                        Quiz >
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

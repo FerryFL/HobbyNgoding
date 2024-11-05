@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/Ellipse 4.png" type="image/x-icon">
+    <title>Materi JavaScript</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Labrada:wght@500&family=Montserrat:wght@100;300;400;700&display=swap"
+        rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo"><img src="assets/Ellipse 2.png" alt="profile"></a>
+
+        <div class="navbar-nav">
+            <a href="home.html">Home</a>
+        </div>
+
+        <div class="hamburger-btn">
+            <span>&#9776</span>
+        </div>
+    </nav>
+
+    <!-- Container -->
+    <h1 class="TitleQuiz">Tutorial JavaScript</h1>
+    <div>
+        <a href="webProgramming.html" class="LinkBack">Kembali</a>
+    </div>
+
+    <div class="Quiz-Card">
+        <div class="Container-Quiz-Card">
+            <img src="assets/js.png" alt="" class="LogoQuiz">
+
+            <div class="Text-Quiz">
+                <br>
+                <br>
+                <h3>#1 Apa sih itu JavaScript?</h3>
+                <p>
+                    JavaScript adalah sebuah bahasa skrip yang dikembangkan pada tahun 1995 oleh Brendan Eich.
+                    JavaScript merupakan bagian penting dalam pembuatan websites atau mobile apps. JavaScript ini tidak
+                    lepas dari yang namanya HTML karena mereka merupakan kesatuan dalam membuat website. Kami
+                    merekomendasikan untuk temen-temen mengikuti course HTML terlebih dahulu agar lebih mudah dalam
+                    mengikuti. JavaScript digunakan agar elemen-elemen yang diciptakan oleh HTML dapat melakukan
+                    fungsinya dan lebih interaktif, misal pada HTML, kita membuat sebuah sign up page dan kita ingin
+                    membuat sebuah validasi dimana email yang harus dimasukan oleh user berakhiran @gmail.com. Kira-kira
+                    seperti itulah kegunaan dari JavaScript.
+                </p>
+                <br>
+                <h3>#2 Basics</h3>
+                <p>
+                    Pertama-tama temen-temen boleh mengunjungi website
+                    supersimple.dev/js-basics/
+                    kemudian click kanan pada website dan pilih inspect. Temen-temen dapat melihat pilihan console dan
+                    kalian bisa untuk melakukan instruksi di sana. Untuk sekarang kita dapat menggunakan ini untuk
+                    belajar instruksi dasar pada JavaScript.
+                    <br><br>
+                    1. alert
+                    Format yang digunakan adalah alert('statement'); Cobalah untuk menulis alert('Hello'); dan melakukan
+                    enter.Terlihat sebuah pop up yang muncul pada bagian atas layar bukan? Fungsi alert digunakan untuk
+                    menampilkan pop up text pada website.
+                    <br><br>
+                    2. Math
+                    Temen-temen dapat melakukan operasi matematika. Cobalah untuk menuliskan 2+2 kemudian enter.
+                    <br><br>
+                    3. Memodifikasi website
+                    Format yang digunakan adalah document.body.innerHTML = 'statement' dengan menggunakan format ini
+                    temen-temen dapat memodifikasi seluruh website dengan menggantikan segala elemen yang ada di
+                    website. Hal ini akan sangat berguna kedepannya.
+                </p>
+                <br>
+                <h3>#3 Bilangan dan Matematika</h3><br>
+                <p>
+                    Pada topik ini kita akan belajar mengenai operasi matematika yang dapat dilakukan pada JavaScript. Operasi yang dapat dilakukan antara lain adalah + - * / . Operasi x pada bahasa ini dilambangkan dengan . Pada JavaScript ini juga dapat melakukan operasi bilangan desimal. Aturan operasi + - / dilakukan seperti biasanya dimana * / memiliki prioritas dalam perhitungan. Selain itu kita juga dapat menggunakan () untuk memberi prioritas lebih pada suatu operasi. Pada komputer bilangan bulat disebut dengan integer dan desimal disebut dengan float. Bilangan-bilangan ini disimpan dengan format bilangan biner, yaitu dengan angka 0 atau 1. Karena hal ini ada kemungkinan terjadi kesalahan dalam melakukan perhitungan desimal. untuk meminimalisir terjadinya kesalahan ini kalian dapat melakukan operasi tanpa menggunakan koma terlebih dahulu dan setelah itu hasilnya akan dibagi komanya. Misal 20.95 + 7.99, kita akan menggantinya dengan (2095 + 799) / 100 untuk mendapat hasil yang lebih akurat. Yang terakhir ada fungsi math.round(angka desimal) kegunaanya adalah untuk membulatkan angka desimal seuai aturan yang sudah ada.
+                </p>
+                <br>
+                <h3>#4 String</h3>
+                <p>
+                    String merupakan representasi dari text yang kita lihat pada website. String ditandakan dengan ‘ atau petik 1. Contoh ‘Hello’, hal ini merupakan contoh dari string. String dapat digunakan dengan berbagai cara. Kita dapat menggabungkan string menggunakan +, contoh ‘Hello’ + ‘Andy’ dan hasilnya akan menjadi HelloAndy. Jika kita melakukan + dengan sebuah angka, maka angka tersebut otomatis berubah ke sebuah string atau text. “ petik 2 digunakan ketika kita ‘ petik 1 digunakan pada string yang ingin kita tampilkan. Misal “I’m studying for exam” pada case ini petik 2 harus digunakan agar tidak terjadi kesalahan pada komputer ketika membaca code kita.
+                </p>
+                <br>
+                <h3>#5 Console.log</h3>
+                <p>
+                    console.log() berguna untuk menampilkan apapun yang berada di dalam () kepada console yang berada di dalam sebuah website. Sebagai contoh temen-temen bsia membuat sebuah file html dan menuliskan tag script, setelah itu dapat mengisinya dengan operasi yang sudah dipelajari tadi, misalnya pertambahan atau string. Temen-temen bisa membuka website kemudian membuka console dengan cara click kanan kemudian inspect. Hal yang sudah diisi akan muncul pada console yang berada di halaman website tersebut. Hal ini biasanya digunakan untuk mengetes apakah code yang teman-teman buat sebenarnya berhasil atau tidak dengan memprint ke console.
+                </p>
+            </div>
+            <div class="thumbnail">
+                <a href="https://youtu.be/SBmSRK3feww" target="_blank"><img src="assets/ThumbJS.png" alt="">
+                    <h4>JavaScript Full Course (2023) </h4>
+                </a>
+            </div>
+            <div>
+                <a href="quiz-js.html">
+                    <button class="buttonQuiz">
+                        Quiz >
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

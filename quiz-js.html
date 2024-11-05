@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/Ellipse 4.png" type="image/x-icon">
+    <title>Quiz JavaScript</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Labrada:wght@500&family=Montserrat:wght@100;300;400;700&display=swap"
+        rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo"><img src="assets/Ellipse 2.png" alt="profile"></a>
+
+        <div class="navbar-nav">
+            <a href="home.html">Home</a>
+        </div>
+
+        <div class="hamburger-btn">
+            <span>&#9776</span>
+        </div>
+    </nav>
+
+    <!-- Container -->
+    <h1 class="TitleQuiz">Quiz JavaScript</h1>
+    <div>
+        <a href="materi-js.html" class="LinkBack">Kembali</a>
+    </div>
+
+    <div class="Quiz-Card">
+        <div class="Container-Quiz-Card">
+            <div class="Text-Quiz">
+                <form onsubmit="return validasi_nilai()">
+                    <h3>1. Tahun dikembangkannya JavaScript</h3>
+                    <div class="input_card">
+                        <input type="radio" name="tahun" value="1994"> 1994
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="tahun" value="1999"> 1999
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="tahun" value="1990"> 1990
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="tahun" value="1995" id="1"> 1995
+                    </div>
+                    <br>
+
+                    <h3>2. JavaScript dikembangkan oleh</h3>
+                    <div class="input_card">
+                        <input type="radio" name="bahasa" value="Robert Likensen"> Robert Likensen
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="bahasa" value="Brendan Eich" id="2"> Brendan Eich
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="bahasa" value="Bjarne Stroustrup"> Bjarne Stroustrup
+                    </div>
+                    <br>
+
+                    <h3>3. Dengan apakah kita menulis string pada JavaScript?</h3>
+                    <div class="input_card">
+                        <input type="radio" name="loop" value="‘ (petik 1)"> ‘ (petik 1)
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="loop" value="“ (petik 2)"> “ (petik 2)
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="loop" value="semuanya benar" id="3"> semuanya benar
+                    </div>
+                    <br>
+
+                    <h3>4. JavaScript biasanya digunakan dengan</h3>
+                    <div class="input_card">
+                        <input type="radio" name="penggunaan" value="CSS"> CSS
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="penggunaan" value="HTML" id="4"> HTML
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="penggunaan" value="Python"> Python
+                    </div>
+                    <br>
+
+                    <h3>5. Berikut adalah format yang ada pada JavaScript</h3>
+                    <div class="input_card">
+                        <input type="radio" name="format" value="console.log"> console.log
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="format" value="alert(statement)"> alert(statement)
+                    </div>
+                    <div class="input_card">
+                        <input type="radio" name="format" value="semuanya benar" id="5"> semuanya benar
+                    </div>
+                    <br>
+                    <button type="Submit" class="submitbut" id="submitBtn">Kumpul</button>
+                    <span id="nilai"></span>
+                    <div class="afterBtn">
+                        <button type="button" id="restartBtn" style="display: none;"
+                            onclick="location.reload();">Ulang</button>
+                        <button type="button" id="backBtn" style="display: none;"
+                            onclick="redirect_js()">Kembali</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="score.js"></script>
+</body>
+
+</html>
